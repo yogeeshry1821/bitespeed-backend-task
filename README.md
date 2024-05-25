@@ -50,7 +50,7 @@ Identifies and consolidates customer information based on email and/or phone num
 ## Deployment
 The deployment can be found at : 
 ## Examples:
-
+1.
   ```sh
 Request:
 {
@@ -72,3 +72,26 @@ Response:
     "message": "Created a new primary contact."
 }
 
+2.
+Request:
+{
+	"email": "asdasdasd@daknfas",
+	"phoneNumber": "121321232222"
+}
+Response:
+{
+    "contact": {
+        "primaryContactId": 7,
+        "emails": [
+            "asdasdasd@daknfas"
+        ],
+        "phoneNumbers": [
+            "12132123",
+            "121321232222"
+        ],
+        "secondaryContactIds": [
+            8
+        ]
+    },
+    "message": "Created a new secondary contact."
+}

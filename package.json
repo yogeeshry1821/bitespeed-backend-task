@@ -1,0 +1,15 @@
+{
+  "name": "bitespeed-backend-task",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "prisma": "^3.0.1",
+    "@prisma/client": "^3.0.1"
+  }
+}

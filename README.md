@@ -29,7 +29,7 @@ Bitespeed needs a way to identify and keep track of a customer's identity across
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/bitespeed-backend-task.git
+   git clone https://github.com/yogeeshry1821/bitespeed-backend-task.git
    cd bitespeed-backend-task
 
 2. **Install Dependencies:**
@@ -48,7 +48,7 @@ Bitespeed needs a way to identify and keep track of a customer's identity across
 
 Identifies and consolidates customer information based on email and/or phone number.
 ## Deployment
-The deployment can be found at : 
+The deployment can be found at : https://bitespeed-backend-task-sigma.vercel.app/identify/
 ## Examples:
 1.
   ```sh

@@ -68,7 +68,9 @@ const identify = async (req, res) => {
     contacts.push(newSecondaryContact);
     message = 'Created a new secondary contact.';
   }
-const secondaryContacts = contacts.filter(contact => contact.id !== primaryContact.id);
+
+  // Update all secondary contacts to point to the correct primary contact
+  const secondaryContacts = contacts.filter(contact => contact.id !== primaryContact.id);
   for (const contact of secondaryContacts) {
     if (contact.linkPrecedence !== 'secondary' || contact.linkedId !== primaryContact.id) {
       await prisma.contact.update({
